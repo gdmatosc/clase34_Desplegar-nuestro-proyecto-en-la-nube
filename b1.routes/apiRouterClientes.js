@@ -5,7 +5,7 @@
 /* #endregion */
 
 const { Router }=require('express');
-const FactoryDAO=require('../b2.daos/indexDao')
+const FactoryDAO=require('../b2.daos/indexDAO.js')
 const DAO=FactoryDAO()
 const router=Router(); 
 const logd = require('../b7.configuraciones/logging.js')
