@@ -37,7 +37,9 @@ const path = require('path')
 const UsersModel=require('./b3.models/user.model')
 
 //const process_PORT=parseInt(process.argv[2]) || 8081;
-const process_PORT=8081;
+//const process_PORT=8081;
+
+const process_PORT=process.env.PORT || 8081;
 
 const yargs=require('yargs')(process.argv.slice(2))
 const argv=yargs
@@ -348,7 +350,7 @@ loger.error(JSON.stringify('Test Error message'),{recurso:'[na]'});
 
 /* #region. 7.Iniciando servidor general*/
 server.listen(process_PORT,()=>{
-    logr.info(`Server desplegado en http://${hostname}:${process_PORT}`,{recurso:'[listen]'});
+    logr.info(`Server desplegado en http://127.0.0.1:${process_PORT}`,{recurso:'[listen]'});
     logr.warn(`PID WORKER ${process.pid}`)
 })
 /* #endregion */ 
