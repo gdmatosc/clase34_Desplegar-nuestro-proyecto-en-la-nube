@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "node ./b8.pruebas_performance/benchmark.js",
-    "start": "b0.server.js"
+    "start": "node b0.server.js"
   },
   "keywords": [],
   "author": "",
