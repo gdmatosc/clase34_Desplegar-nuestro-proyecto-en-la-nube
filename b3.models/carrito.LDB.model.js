@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const mongodb = require('../b7.configuraciones/mongodb.js')
 
-let connCarritoLDB=mongoose.createConnection(mongodb.connection.urlL,mongodb.options)
+let connCarritoLDB=mongoose.createConnection(mongodb.connection.urlC,mongodb.options)
 
 const carritoCollection='carritoProductos'
 

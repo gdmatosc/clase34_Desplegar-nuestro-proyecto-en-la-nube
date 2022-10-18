@@ -4,7 +4,7 @@ const logd = require('../b7.configuraciones/logging.js')
 const modname='[productos.LDB.model.js]'
 const logr=logd.child({modulo:`${modname}`})
 
-let connProductosLDB=mongoose.createConnection(mongodb.connection.urlL,mongodb.options)
+let connProductosLDB=mongoose.createConnection(mongodb.connection.urlC,mongodb.options)
 //logr.debug(JSON.stringify({connProductosLDB}),{recurso:'connProductosLDB'})
 const productosCollection='productosGeneral'
 
