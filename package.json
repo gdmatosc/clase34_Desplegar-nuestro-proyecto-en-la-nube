@@ -7,14 +7,12 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node ./b8.pruebas_performance/benchmark.js",
     "start": "node b0.server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autocannon": "^7.9.0",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.2",
