@@ -1,0 +1,33 @@
+{
+  "name": "clase26_desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "b0.server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node ./b8.pruebas_performance/benchmark.js",
+    "start": "0x b0.server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^7.9.0",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.5.1",
+    "nodemon": "^2.0.19",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "session-file-store": "^1.5.0",
+    "socket.io": "^4.5.1",
+    "winston": "^3.8.2",
+    "yargs": "^17.5.1"
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_computer_now_32x32.png">
+    <link rel="stylesheet" href="../css/estiloOperaciones1.css">
+    <title>Productos</title>
+</head>
+<body>
+    
+    <div class="gridContainer">
+        <!--1.Elementos de cabecera a la altura del Logo-->
+        <div class="Logo">
+            <div class="flexContainerLogo">
+                <div class="flexItemLogoMain">
+                    <a href="../index.html">
+                        <img src="/img/logo_electro_te.png" alt="Logo"> 
+                    </a>
+                </div>
+                 <div class="flexItemBtnLogout">
+                    <button class="btnLogout" onclick='window.location.href = "/logout"' type="button">Logout</button>
+                </div>
+             </div>
+           
+        </div>
+         <!--2.Menú de módulos--> 
+         <div class="Header_nav"> 
+             <ul class="mainNav">
+                 <li><a href="/chat">Chat</a></li>
+                 <li><a href="">Productos</a></li>
+                
+             </ul>
+         </div>
+         <!--3.Sección1.Título y subtítulo general-->
+         <div class="Section1">	
+             
+             <div>
+                <h2 class="login">Sesión de <span class="username"><%=username%></span>  en Productos</h2>
+             </div>
+   
+         </div>
+         <!--4.Sección2: Objetivos-->
+         <div class="Section2">	
+            <fieldset class="legendas formCentral">
+                <legend><span class="numParrafo">1.Formulario</span></legend>
+                <div>
+                    <form id="formSendDatos">
+                        <br><br>
+                        <label>Cantidad:</label>
+                        <input name="nombre" type="number">
+                        <br><br>
+                        <button class="btnEnviar" type="submit">Enviar</button>
+                    </form>
+                    <br>
+                </div>
+            </fieldset>
+         </div>
+         <!--5.Sección3: DataFlow FrontEnd-->
+         <div class="Section3">	
+            <fieldset class="legendas formCentralResultado">
+                <legend><span class="numParrafo">2.Resultados</span></legend>
+                <div id="resultadoFuncion1" class="formResultados">
+                 
+                    
+                </div>
+            </fieldset>
+         </div>
+         <!--6.Sección4: DataFlow BackEnd-->
+         <div class="Section4">	
+             <h2 ></h2>
+             <div>
+                 
+ 
+             </div>
+   
+         </div>
+         <!--7.Sección5-->
+         
+         <!--8.Footer-->
+         <div class="Footer">
+             <div class="flexFoot">
+                 <div class="footTitulo">Nuestra empresa
+                      <div class="footContenido">Sobre nosotros</div>
+                      <div class="footContenido">Politica de servicio al cliente</div>
+                 </div>                 
+                 <div class="footTitulo">Horario de atención   
+                      <div class="footContenido">De 7am hasta 11pm</div>
+                      <div class="footContenido"></div>   
+                 </div>
+                 <div class="footTitulo">Contacto   
+                      <div class="footContenido">51987654321</div>
+                      <div class="footContenido"></div>
+                      <div class="footContenido"></div> 
+                      <div class="footContenido"></div>     
+                 </div> 
+                 <div class="footTitulo">Servicios complementarios   
+                      <div class="footContenido">Asesoramiento</div>
+                      <div class="footContenido">Soporte técnico remoto</div>
+                      <div class="footContenido"></div> 
+                      <div class="footContenido"></div>     
+                 </div> 
+             </div>
+         </div>
+ 
+     </div>
+     <script src="/js/operaciones1Admin.js"></script>
+</body>
+</html>

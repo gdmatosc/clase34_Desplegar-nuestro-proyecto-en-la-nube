@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../img/favicon_computer_now_32x32.png">
+    <link rel="stylesheet" href="./css/estiloCarrito.css">
+    <title>Productos</title>
+</head>
+<body>
+    
+    <div class="gridContainer">
+        <!--1.Elementos de cabecera a la altura del Logo-->
+        <div class="Logo">
+            <div class="flexContainerLogo">
+                <div class="flexItemLogoMain">
+                    <a href="../index.html">
+                        <img src="/img/logo_electro_te.png" alt="Logo"> 
+                    </a>
+                </div>
+                 <div class="flexItemBtnLogout">
+                    <button class="btnLogout" onclick='window.location.href = "/logout"' type="button">Logout</button>
+                </div>
+             </div>
+           
+        </div>
+         <!--2.Menú de módulos--> 
+         <div class="Header_nav"> 
+             <ul class="mainNav">
+                 <li><a href="/chat">Chat</a></li>
+                 <li><a href="">Productos</a></li>
+                
+             </ul>
+         </div>
+         <!--3.Sección1.Título y subtítulo general-->
+         <div class="Section1">	
+             
+             <div>
+                <h2 class="login">Sesión de <span class="username"><%=username%></span>  en Productos</h2>
+             </div>
+   
+         </div>
+         <!--4.Sección2: Objetivos-->
+         <div class="Section2">	
+            
+            <div class="container">
+                <div class="row mt-3">
+                    <div class="col">
+                        <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                        <form id="procesar-pago" action="#" method="post">
+                            <div class="form-group row">
+                                <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                                <div class="col-12 col-md-10">
+                                    <input type="text" class="form-control" id="cliente"
+                                        placeholder="Ingresa nombre cliente" name="destinatario">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                                <div class="col-12 col-md-10">
+                                    <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
+                                </div>
+                            </div>
+    
+                            <div id="carrito1" class="form-group table-responsive" >
+                                
+                            </div>
+    
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 mb-2">
+                                    <a href="productos1.html" class="btn btn-info btn-block">Seguir comprando</a>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    
+                                    <a href="#" id="procesar-compra" class="btn btn-success btn-block">Procesar Compra</a>
+                                </div>
+                            </div>
+                        </form>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+            
+         </div>
+         <!--5.Sección3: DataFlow FrontEnd-->
+         <div class="Section3">	
+            <form class="formulario" action="/login" method="post">
+                <br><br>
+                <h2 class="login">En construcción</h2>
+                
+                
+                <br><br>
+            </form>
+         </div>
+         <!--6.Sección4: DataFlow BackEnd-->
+         <div class="Section4">	
+             <h2 ></h2>
+             <div>
+                 
+ 
+             </div>
+   
+         </div>
+         <!--7.Sección5-->
+         
+         <!--8.Footer-->
+         <div class="Footer">
+             <div class="flexFoot">
+                 <div class="footTitulo">Nuestra empresa
+                      <div class="footContenido">Sobre nosotros</div>
+                      <div class="footContenido">Politica de servicio al cliente</div>
+                 </div>                 
+                 <div class="footTitulo">Horario de atención   
+                      <div class="footContenido">De 7am hasta 11pm</div>
+                      <div class="footContenido"></div>   
+                 </div>
+                 <div class="footTitulo">Contacto   
+                      <div class="footContenido">51987654321</div>
+                      <div class="footContenido"></div>
+                      <div class="footContenido"></div> 
+                      <div class="footContenido"></div>     
+                 </div> 
+                 <div class="footTitulo">Servicios complementarios   
+                      <div class="footContenido">Asesoramiento</div>
+                      <div class="footContenido">Soporte técnico remoto</div>
+                      <div class="footContenido"></div> 
+                      <div class="footContenido"></div>     
+                 </div> 
+             </div>
+         </div>
+ 
+     </div>
+     <script src="/js/carritoClientes.js"></script>
+</body>
+</html>

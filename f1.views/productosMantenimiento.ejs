@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_computer_now_32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/estiloProductoMant.css">
+    <title>Productos</title>
+</head>
+<body>
+    
+    <div class="gridContainer">
+        <!--1.Elementos de cabecera a la altura del Logo-->
+        <div class="Logo">
+            <div class="flexContainerLogo">
+                <div class="flexItemLogoMain">
+                    <a href="../index.html">
+                        <img src="/img/logo_electro_te.png" alt="Logo"> 
+                    </a>
+                </div>
+                 <div class="flexItemBtnLogout">
+                    <button class="btnLogout" onclick='window.location.href = "/logout"' type="button">Logout</button>
+                </div>
+             </div>
+           
+        </div>
+         <!--2.Menú de módulos--> 
+         <div class="Header_nav"> 
+             <ul class="mainNav">
+                 <li><a href="/chat">Chat</a></li>
+                 <li><a href="">Productos</a></li>
+                
+             </ul>
+         </div>
+         <!--3.Sección1.Título y subtítulo general-->
+         <div class="Section1">	
+             
+             <div>
+                <h2 class="login">Sesión de <span class="username"><%=username%></span>  en Productos</h2>
+             </div>
+   
+         </div>
+         <!--4.Sección2: Objetivos-->
+         <div class="Section2">	
+            <fieldset class="legendas">
+                <legend><span class="numParrafo">1.Formularios</span></legend>
+              
+                <div >
+                    <form id="formSendDB">
+                        <br>
+                        <label>Titulo:</label>
+                        <input name="nombre" type="text">
+                        <br><br>
+                        <label>Imagen:</label>
+                        <!-- <input name="thumbnail"type="text"> -->
+                        <select name='img' id='img'>
+                            <option value="/img/periferico_mouse.jpg">Mouse</option>
+                            <option value="/img/periferico_audifono.jpg">Audifono</option>
+                            <option value="/img/periferico_camara_externa_1.jpg">Cámara</option>
+                            <option value="/img/comunicaciones_cable_usb.jpg">Cable USB</option>
+                            <option value="/img/electrico_estabilizador.jpg">Estabilizador</option>
+                        </select>
+                        <br><br>
+                        <label>Precio:</label>
+                        <input name="precio"type="number">
+                        <br><br>
+                        <button class="btnEnviar" type="submit">Enviar</button>
+                    </form>
+                    <br><br>
+                </div>
+               
+
+            </fieldset>
+            
+            
+         </div>
+         <!--5.Sección3: DataFlow FrontEnd-->
+         <div class="Section3">	
+            <fieldset class="legendas">
+                <legend><span class="numParrafo">3.Tablas de BD</span></legend>
+              
+                <div id="tablaBD">
+                    
+                </div>
+               
+
+            </fieldset>
+         </div>
+         <!--6.Sección4: DataFlow BackEnd-->
+         <div class="Section4">	
+             
+
+   
+         </div>
+         <!--7.Sección5-->
+         
+         <!--8.Footer-->
+         <div class="Footer">
+             <div class="flexFoot">
+                 <div class="footTitulo">Nuestra empresa
+                      <div class="footContenido">Sobre nosotros</div>
+                      <div class="footContenido">Politica de servicio al cliente</div>
+                 </div>                 
+                 <div class="footTitulo">Horario de atención   
+                      <div class="footContenido">De 7am hasta 11pm</div>
+                      <div class="footContenido"></div>   
+                 </div>
+                 <div class="footTitulo">Contacto   
+                      <div class="footContenido">51987654321</div>
+                      <div class="footContenido"></div>
+                      <div class="footContenido"></div> 
+                      <div class="footContenido"></div>     
+                 </div> 
+                 <div class="footTitulo">Servicios complementarios   
+                      <div class="footContenido">Asesoramiento</div>
+                      <div class="footContenido">Soporte técnico remoto</div>
+                      <div class="footContenido"></div> 
+                      <div class="footContenido"></div>     
+                 </div> 
+             </div>
+         </div>
+ 
+     </div>
+     <script src="/js/productosMantenimiento.js"></script>
+</body>
+</html>

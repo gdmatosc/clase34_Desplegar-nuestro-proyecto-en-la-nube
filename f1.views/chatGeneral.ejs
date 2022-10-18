@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_computer_now_32x32.png">
+    <link rel="stylesheet" href="./css/estiloChat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Chat</title>
+</head>
+<body>
+  
+ <div class="gridContainer">
+  <!--1.Elementos de cabecera a la altura del Logo-->
+    <div class="Logo">
+        <div class="flexContainerLogo">
+            <div class="flexItemLogoMain">
+                <a href="../index.html">
+                    <img src="/img/logo_electro_te.png" alt="Logo"> 
+                </a>
+            </div>
+             <div class="flexItemBtnLogout">
+                <button class="btnLogout" onclick='window.location.href = "/logout"' type="button">Logout</button>
+            </div>
+         </div>
+       
+    </div>
+    <!--2.Menú de módulos--> 
+    <div class="Header_nav"> 
+        <ul class="mainNav">
+            <li><a href="">Chat</a></li>
+            <li><a href="/productosClientes">Comprar</a></li>
+            <li><a href="/productosMantenimiento">Mantenimiento</a></li>
+        </ul>
+    </div>
+    <!--3.Sección1.Título y subtítulo general-->
+    <div class="Section1">	
+        <h2 class=tituloGeneral>Coderhouse: Temas acumulados</h2>
+        <div>
+            <h2 class="login">Sesión de <span class="username"><%=username%></span>  en Chat</h2>
+         </div>
+        <div>
+            
+        </div>
+ 
+    </div>
+    <!--4.Sección2: Objetivos-->
+    <div class="Section2">	
+            <fieldset class="legendas">
+                <legend><span class="numParrafo">1.Aplicación avanzada con sockets</span></legend>
+                    <div id="virtualSelect">
+
+                    </div>
+                    <div id="virtualForm">
+                        
+                    </div>
+            </fieldset>
+    </div>
+    <div class="Section3">	
+        <fieldset class="legendas">
+            <legend><span class="numParrafo">1.Aplicación avanzada con sockets</span></legend>
+                    <br>
+                    <div id="messages">
+                    
+                    </div>
+                    <br>
+                
+                    <div id="messages2">
+                    
+                    </div>
+                    <br>
+        </fieldset>
+    </div>
+    <div class="Section4">	
+        
+    </div>
+   <!--8.Footer-->
+   <div class="Footer">
+       <div class="flexFoot">
+           <div class="footTitulo">Nuestra empresa
+                <div class="footContenido">Sobre nosotros</div>
+                <div class="footContenido">Politica de servicio al cliente</div>
+           </div>                 
+           <div class="footTitulo">Horario de atención   
+                <div class="footContenido">De 7am hasta 11pm</div>
+                <div class="footContenido"></div>   
+           </div>
+           <div class="footTitulo">Contacto   
+                <div class="footContenido">51987654321</div>
+                <div class="footContenido"></div>
+                <div class="footContenido"></div> 
+                <div class="footContenido"></div>     
+           </div> 
+           <div class="footTitulo">Servicios complementarios   
+                <div class="footContenido">Asesoramiento</div>
+                <div class="footContenido">Soporte técnico remoto</div>
+                <div class="footContenido"></div> 
+                <div class="footContenido"></div>     
+           </div> 
+       </div>
+   </div>
+</div>   
+<!--4.Scripts--> 
+      <script src="/socket.io/socket.io.js"></script>
+      <script defer src="/js/JSchat.js"></script>
+<!--4.Temp snipet--> 
+    <!-- <form id="form1ro" onsubmit="return addMessage()">
+        <p>Usuario:</p>
+        <input type="text" name="username" id="username">
+        <p>Mensaje:</p>
+        <input type="text" name="text" id="text" placeholder="">
+        <br><br>
+        <input id="submit" type="submit" value="Enviar">
+        <br><br>
+    </form> -->
+</body>
+</html>

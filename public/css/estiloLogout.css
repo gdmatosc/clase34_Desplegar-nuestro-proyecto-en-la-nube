@@ -1,0 +1,509 @@
+/* #region. 1.Parámetros y recursos generales*/
+
+/* #region. Plantilla*/
+
+/* #endregion */ 
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+	padding: 0;
+}
+/* #endregion */ 
+
+/* #region. 2.Formato general de secciones*/
+.Section1 {
+    background-color: rgb(2, 2, 58);
+    padding:0;
+    border:0;
+    margin:0
+}
+
+.Section1 h2.tituloGeneral {
+    background-color: rgb(2, 2, 58);
+    margin:0;
+    padding:10px;
+    text-align: center;
+    color: rgb(221, 215, 215);
+}
+
+.Section1 h4.subTituloGeneral {
+    background-color: rgb(2, 2, 58);
+    margin:0;
+    padding:10px;
+    text-align: center;
+    color: rgb(221, 215, 215);
+}
+
+.Section1 h2 {
+    color: lightgreen;
+    text-align: center;
+}
+
+.Section2 {
+    background-color: rgb(2, 2, 58);
+    padding:0;
+    border:0;
+    margin:0
+}
+
+.Section2 h2 {
+    color: lightgreen;
+    text-align: center;
+}
+
+.Section3 {
+    background-color: rgb(2, 2, 58);
+    padding:0;
+    border:0;
+    margin:0
+}
+
+.Section3 h2 {
+    color: lightgreen;
+    text-align: center;
+}
+
+.Section3 span.username {
+    color: lightgreen;
+    text-align: center;
+}
+
+.Section3 h2.login {
+    color: white;
+    text-align: center;
+}
+
+.Section4 {
+    background-color: rgb(2, 2, 58);
+    padding:0;
+    border:0;
+    margin:0
+}
+
+.Section4 h2 {
+    color: lightgreen;
+    text-align: center;
+}
+
+.Section5 {
+    background-color: rgb(2, 2, 58);
+    padding:0;
+    border:0;
+    margin:0
+}
+
+.Section5 h2 {
+    color: lightgreen;
+    text-align: center;
+}
+/* #endregion */ 
+
+/* #region. 3.Formato general de texto, legendas y listas*/
+ul.contenidoLista{
+    list-style: none; 
+    margin-left:1em;
+    padding:0;
+}
+
+li.subContenidoLista{
+    margin-left:0;
+}
+
+p.parrafo{
+    margin:0;
+}
+
+span.numParrafo{
+    color:lightgreen;
+    font-weight: bold;
+}
+
+.botonLegend{
+    padding-bottom: 1em;
+}
+
+.legendas{
+    color:white;
+    margin:10px;
+    padding:0px;
+    padding-inline-start: 15px;
+}
+
+/* #endregion */ 
+
+/* #region. 4.Definición de Grid*/
+.gridContainer {  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  repeat(7, auto);
+    gap: 0px 0px;
+    /*grid-auto-flow: row;*/
+    grid-template-areas:
+      "Logo Logo Logo Logo"
+      "Header_nav Header_nav Header_nav Header_nav"
+      "Section1 Section1 Section1 Section1"
+      "Section2 Section3 Section3 Section4"
+      "Section2 Section3 Section3 Section4"
+      "Section5 Section5 Section5 Section5"
+      "Footer Footer Footer Footer";
+  }
+  
+  .Logo { grid-area: Logo; }
+  .Header_nav { grid-area: Header_nav; }
+  .Section1 { grid-area: Section1; }
+  .Section2 { grid-area: Section2; }
+  .Section3 { grid-area: Section3; }
+  .Section4 { grid-area: Section4; }
+  .Section5 { grid-area: Section5; }
+  .Footer { grid-area: Footer; }
+/* #endregion */
+
+/* #region. 5.Cabecera, menú */
+
+/*Logo*/
+.cabeceraLogoNav{
+    position:absolute;
+    right:15px;
+    top:15px;
+    color: green;
+    text-decoration: none
+}
+
+.Logo {
+    vertical-align: center;
+    padding:10px;
+}
+
+.Logo a{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100%;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Menú con submenú */
+.Header_nav {
+    background-color: rgb(4, 4, 74);
+}
+
+.Header_nav ul.mainNav {
+    background-color: rgb(4, 4, 74);
+    text-decoration: none;
+    padding-left: 0px;
+    text-align: center;
+    margin:0;
+}
+
+.Header_nav ul.mainNav li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.Header_nav ul.mainNav li a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.Header_nav ul.mainNav li:hover {
+    background-color: rgb(2, 2, 44);
+}
+
+/* #endregion */ 
+
+/* #region. 6.Formularios*/
+.formulario{
+    color:white;
+    /*margin-left: 35%;*/
+    text-align: center;
+    margin:2em;
+    border-radius: 5px;
+    background-color: #3c238e;
+}
+
+.formularioChat{
+    color:white;
+    /*margin-left: 35%;*/
+    /*text-align: left;*/
+    margin:0.5em;
+}
+
+.Section5 iframe {
+    display: block;
+    text-align: center;
+    margin:auto;
+}
+
+.mensajesFormulario{
+    color:white;
+    /*margin-left: 35%;*/
+    margin:4em;
+    text-align: center;
+}
+
+.containervirtualForm{
+    display:flex;
+    flex-flow: row wrap;
+    column-gap: 1em;
+    /*justify-content: space-between;*/
+}
+
+.containerBotones{
+    display:flex;
+    flex-flow: row wrap;
+    column-gap: 2em;
+    /*justify-content: space-between;*/
+}
+/* #endregion */ 
+
+/* #region. 7.Flexbox de imágenes*/
+
+.team-container
+{
+    width:100%;
+    height: auto;
+ 
+}
+.text
+{
+    color:green;
+    font-size: 25px;
+    margin-top: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+ 
+}
+.row
+{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    justify-content: space-evenly;
+}
+
+.profile-card
+{
+    background-color: #ffffff;
+    width: 270px;
+    height: 300px;
+    margin: 20px 10px 10px 10px;
+}
+
+.profile-image img{
+    width: 130px;
+    height: 130px;
+    /*border-radius: 50px;*/
+}
+.profile-image
+{
+    text-align: center;
+}
+
+.profile-content
+{
+    padding:15px;
+}
+
+.desc
+{
+    text-align: center;
+}
+.desc h2
+{
+    color: green;
+    font-size: 20px;
+}
+.desc p{
+    font-size: 13px;
+    line-height: 1.3em;
+    margin-top: -10px;
+    color: #000000;
+     
+}
+.btn-div
+{
+    text-align: center;
+}
+.btn
+{
+    background-color: rgb(2, 2, 58);
+    color: #ffffff;
+    width: 150px;
+    cursor: pointer;
+    height: 38px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px 3px #e6e6e6;
+    border-radius: 3px;
+    outline:none;
+    border:none;
+    text-transform: uppercase;
+}
+/* #endregion */ 
+
+/* #region. 8.Parallax*/
+.parallax {
+    background-image: url("../img/perifericos_comunicaciones_electricos.jpg");
+    height: 80vh;
+    width: 100%;
+    
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 3vw;
+    padding-top: 5vw;
+    margin: 0; }
+    .parallax h4 {
+      font-size: 3rem;
+      /*text-align: left;*/
+      color: white; }
+    .parallax p {
+      font-size: 2rem;
+      /*text-align: left;*/
+      color: white; }
+/* #endregion */ 
+
+/* #region. 7.Botones*/
+.btnHome {
+    /*background-color: rgb(7, 150, 105);*/
+    background-color:darkblue;
+    color: white;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    /*padding: 15px 32px;*/
+    padding: 15px 25px;
+    font-size: 16px;
+    border: 0em;
+    cursor: pointer;
+    border-radius: 0.4em;
+}
+
+.btnToHome {
+    /*background-color: rgb(7, 150, 105);*/
+    background-color:darkgreen;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /*padding: 15px 32px;*/
+    padding: 12px 22px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 0em;
+    cursor: pointer;
+    border-radius: 0.4em;
+}
+
+.btnEnviar {
+    /*background-color: rgb(7, 150, 105);*/
+    background-color:green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /*padding: 15px 32px;*/
+    padding: 12px 22px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 0em;
+    cursor: pointer;
+    border-radius: 0.4em;
+}
+
+.btnLimpiarBD {
+    /*background-color: rgb(7, 150, 105);*/
+    background-color:rgb(178, 68, 13);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /*padding: 15px 32px;*/
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* #endregion */ 
+
+/* #region. 8.Footer*/
+.footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.flexFoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    background-color: black;
+    color:white; 
+    font-size:18px;
+    padding: 2em;
+}
+.footTitulo{
+    background-color: black;
+    color:white; 
+    font-weight: 900;
+    color: lightgreen;
+    font-size:18px;
+}
+.footContenido{
+    color: white;
+    font-size:16px;
+    
+}
+/* #endregion */ 
+
+/* #region. 9.Media queries*/
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+    body{
+        /*background-color: rgb(235, 235, 243);*/
+        background-color: #15161D;
+    }
+   
+}
+
+/* vista tablet */
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    body{
+	    /*background-color: rgb(202, 241, 202);*/
+        background-color: #15161D;
+    }   
+}
+
+/* vista mobile */
+@media only screen and (max-width: 767px){
+    body{
+        /*background-color: rgb(243, 243, 203);*/
+        background-color: #15161D;
+    }
+    
+    .navFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        }
+    .flexFoot{
+        display: flex;
+        flex-direction: column;
+        }
+    .flexSection{
+            display: flex;
+            flex-direction: column;
+    }
+}
+/* #endregion */
+
