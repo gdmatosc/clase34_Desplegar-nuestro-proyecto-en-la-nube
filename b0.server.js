@@ -36,7 +36,8 @@ const path = require('path')
 
 const UsersModel=require('./b3.models/user.model')
 
-const process_PORT=parseInt(process.argv[2]) || 8081;
+//const process_PORT=parseInt(process.argv[2]) || 8081;
+const process_PORT=8081;
 
 const yargs=require('yargs')(process.argv.slice(2))
 const argv=yargs
